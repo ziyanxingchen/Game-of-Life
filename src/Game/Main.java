@@ -2,11 +2,11 @@ package Game;
 import java.util.Random;
 import java.util.Scanner;
 
-    /*
-    1.鐢熷懡灏忔父鎴忕殑閭诲眳涓轰笂涓嬪乏鍙冲拰鏂滃瑙掍竴鍏卞叓涓綅缃�;
-    2.榛樿閫夋嫨8*8鐨勬牸瀛愩��
-    3.灏嗛粯璁ょ殑鏍煎瓙鍒濆鍖栵紝骞舵墦鍗拌緭鍑�
-    4.浣跨敤LifeGame涓殑鏂规硶鐢熸垚涓嬩竴杞殑鐘舵�侊紝骞舵墦鍗�
+     /*
+    1.生命小游戏的邻居为上下左右和斜对角一共八个位置;
+    2.默认选择8*8的格子。
+    3.将默认的格子初始化，并打印输出
+    4.使用LifeGame中的方法生成下一轮的状态，并打印
      */
 
 public class Main {
@@ -14,16 +14,16 @@ public class Main {
         String[][] map = new String[8][8];
         LifeGame me = new LifeGame();
 
-        //瀵规墍鏈夋牸瀛愯繘琛屽垵濮嬪寲杈撳叆锛屾涓�0锛屾椿涓�1
-        //闅忔満鐢熸垚鍚勪釜浣嶇疆鐨勯偦灞呮儏鍐�
+        //对所有细胞进行初始化输入，死为0，活为1
+        //随机生成各个位置的邻居情况
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
 
                 int num = new Random().nextInt(2);
                 if (num == 1)
-                    map[i][j] = "鈼�";
+                    map[i][j] = "●";
                 else if (num == 0)
-                    map[i][j] = "鈼�";
+                    map[i][j] = "○";
             }
         }
         System.out.println("初始状态为：");
