@@ -86,7 +86,20 @@ public class LifeGame {
     }
 
     public String[][] getNext(String[][] map, int[] point) {
+     int n = 0;
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
 
+                //变更状态
+                if (point[n] == 1)
+                    map[i][j] = "○";
+                if (point[n] == 3)
+                    map[i][j] = "●";
+
+                n++;
+            }
+        }
+        return map;
         
     }
 
