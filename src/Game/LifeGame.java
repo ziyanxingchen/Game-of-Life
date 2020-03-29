@@ -28,42 +28,42 @@ public class LifeGame {
                 int life = 0;
 
                 //1.判断正下方的位置
-                if (i + 1 < 8 && map[i + 1][j].equals("鈼�")) {
+                if (i + 1 < 8 && map[i + 1][j].equals("●")) {
                     life++;
                 }
 
                 //2.判断右下位置
-                if (i + 1 < 8 && j + 1 < 8 && map[i + 1][j + 1].equals("鈼�")) {
+                if (i + 1 < 8 && j + 1 < 8 && map[i + 1][j + 1].equals("●")) {
                     life++;
                 }
 
                 //3.判断左下位置
-                if (i + 1 < 8 && j - 1 >= 0 && map[i + 1][j - 1].equals("鈼�")) {
+                if (i + 1 < 8 && j - 1 >= 0 && map[i + 1][j - 1].equals("●")) {
                     life++;
                 }
 
                 //4.判断右侧位置
-                if (j + 1 < 8 && map[i][j + 1].equals("鈼�")) {
+                if (j + 1 < 8 && map[i][j + 1].equals("●")) {
                     life++;
                 }
 
                 //5.判断左侧位置
-                if (j - 1 >= 0 && map[i][j - 1].equals("鈼�")) {
+                if (j - 1 >= 0 && map[i][j - 1].equals("●")) {
                     life++;
                 }
 
                 //6.判断正上方位置
-                if (i - 1 >= 0 && map[i - 1][j].equals("鈼�")) {
+                if (i - 1 >= 0 && map[i - 1][j].equals("●")) {
                     life++;
                 }
 
                 //7.判断右上位置
-                if (i - 1 >= 0 && j + 1 < 8 && map[i - 1][j + 1].equals("鈼�")) {
+                if (i - 1 >= 0 && j + 1 < 8 && map[i - 1][j + 1].equals("●")) {
                     life++;
                 }
 
                 //8.判断左上位置
-                if (i - 1 >= 0 && j - 1 >= 0 && map[i - 1][j - 1].equals("鈼�")) {
+                if (i - 1 >= 0 && j - 1 >= 0 && map[i - 1][j - 1].equals("●")) {
                     life++;
                 }
 
